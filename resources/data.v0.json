@@ -1,0 +1,11 @@
+[
+  { "color": "antiquewhite", "size": "small", "border": false },
+  { "color": "steelblue", "size": "medium", "border": true },
+  { "color": "tomato", "size": "large", "border": false },
+  { "color": "crimson", "size": "large", "border": false },
+  { "color": "violet", "size": "medium", "border": true },
+  { "color": "darkcyan", "size": "large", "border": true },
+  { "color": "cadetblue", "size": "small", "border": false },
+  { "color": "darkseagreen", "size": "medium", "border": true },
+  { "color": "dimgray", "size": "small", "border": true }
+]
