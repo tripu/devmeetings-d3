@@ -4,7 +4,7 @@ const height = 100
 let svg = d3.select('#svg')
   .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
 
-let content = d3.append('g')
+let content = svg.append('g')
   .attr('class', 'content')
   .attr('transform', `translate(${margin.top}, ${margin.left})`);
 

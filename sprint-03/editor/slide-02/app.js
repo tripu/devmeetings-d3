@@ -28,6 +28,6 @@ content.selectAll('rect').enter()
   .append('rect')
   .attr('x', (d)=> { return x_scale(d.asignatura) })
   .attr('width', (d)=> { return x_scale.bandwidth() })
-  .attr('y' (d)=> { return height - d.nota })
+  .attr('y', (d)=> { return height - d.nota })
   .attr('height', d=>d.nota)
   .attr('fill', 'steelblue');
