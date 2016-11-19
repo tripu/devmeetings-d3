@@ -12,7 +12,7 @@ rect.transition()
   .attr('width', 300);
 
 // 4/ Se pueden retrasar
-rect.transform
+rect.transition()
   .delay(1500)
   .duration(1000)
   .attr('height', 300);
