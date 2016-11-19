@@ -43,7 +43,7 @@ let datos_1 = [
   {nombre: 'Antonio', color: 'red'},
   {nombre: 'María', color: 'green'},
   {nombre: 'Luis', color: 'pink'},
-  {nombre: 'Clara', color: 'steelblue'},
+  {nombre: 'Clara', color: 'steelblue'}
 ]
 
 // 7/ Llamamos a la funcion
@@ -51,6 +51,6 @@ idem(datos_1);
 setTimeout(()=> {
   datos_1.pop();
   datos_1.pop();
-  datos_1.push({'Eva', color: 'brown'})
+  datos_1.push({nombre:'Eva', color: 'brown'})
   idem(datos_1)
 }, 3000)
