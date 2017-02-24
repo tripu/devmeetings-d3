@@ -10,9 +10,9 @@ let svg = d3.select('#svg')
   .attr('viewBox', `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
 
 // 3/ Generamos el contenido
-let content = d3.append('g')
+let content = svg.append('g')
   .attr('class', 'content')
-  .attr('transform', `translate(${margin.top}, ${margin.left})`);
+  .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
 // 6/ Veamos un rect como queda
 content.append('rect')

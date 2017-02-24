@@ -8,15 +8,15 @@ let legend_container = svg.append('g').attr('class', 'container');
 
 let idem = (datos)=> {
   let leyenda = legend_container.selectAll('g').data(datos);
-  let nueva_leyenda = legend_container.enter();
-  let vieja_leyenda = legend_container.exit();
+  let nueva_leyenda = leyenda.enter();
+  let vieja_leyenda = leyenda.exit();
 
   // Los elementos que sobran son faciles
   vieja_leyenda.remove();
 
   // 3/ Ojo que, como ahora no es solo un elemento, sino varios, hay que guardar la info;
   let nuevos_items = nueva_leyenda.append('g')
-    .attr('transform', (d,i)=> {return `translate(${20, 30*(i+1)})`})
+    .attr('transform', (d,i)=> {return `translate(${20*(i+1)}, ${30*(i+1)})`})
 
   // 6/ Colocamos un rect
   nuevos_items.append('rect')
@@ -29,6 +29,7 @@ let idem = (datos)=> {
   // 3/ Pero tambien un text
   nuevos_items.append('text')
     .attr('x', 25)
+    .attr('y', 15)
     .text(d=>d.nombre)
 
   // 2/ Los elementos actuales hay que actualizarlos, pero es más facil
