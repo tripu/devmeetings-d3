@@ -117,7 +117,7 @@
 
     <script>
 
-      d3.json('/resources/data.json', (error, full_data)=> {
+      d3.json('resources/data.json', (error, full_data)=> {
 
         const data_filter = (data, year)=> {
           return data.filter((d)=> { return d.date.endsWith(year) });
